@@ -47,12 +47,6 @@
 
 
         scroll-lr:
-
-        croll_left_right: croll_left_right {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "croll_left_right";
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-        };
     };
 
     keymap {
