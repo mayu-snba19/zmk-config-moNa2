@@ -34,20 +34,27 @@
             tapping-term-ms = <200>;
         };
 
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        scroll_up_down: scroll_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
+            label = "scroll_up_down";
         };
 
-        volume: volume {
+        scroll-lr:
+
+        scroll-lr {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "VOLUME";
+            label = "SCROLL-LR";
             #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
         };
+
+        scroll-lr:
+
+        scroll-lr { compatible = "zmk,behavior-sensor-rotate"; };
     };
 
     keymap {
@@ -72,7 +79,7 @@
 &trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans                                                         &kp F12
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll-lr>;
         };
 
         layer_2 {
