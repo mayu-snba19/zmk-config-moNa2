@@ -41,6 +41,13 @@
 
             tap-ms = <20>;
         };
+
+        volume: volume {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "VOLUME";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+        };
     };
 
     keymap {
@@ -87,7 +94,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                                                   &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&volume>;
         };
 
         layer_4 {
