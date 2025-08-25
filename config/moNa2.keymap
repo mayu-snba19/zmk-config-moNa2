@@ -48,9 +48,9 @@
 
         scroll-lr:
 
-        scroll_left_rightscroll_left_right: scroll-lr {
+        croll_left_right: croll_left_right {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLL_LEFT_RIGHT";
+            label = "croll_left_right";
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
         };
     };
@@ -77,7 +77,7 @@
 &trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans                                                         &kp F12
             >;
 
-            sensor-bindings = <&scroll_left_rightscroll_left_right>;
+            sensor-bindings = <&croll_left_right>;
         };
 
         layer_2 {
