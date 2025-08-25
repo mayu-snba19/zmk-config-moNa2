@@ -77,7 +77,7 @@
 &trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans                                                         &kp F12
             >;
 
-            sensor-bindings = <&scroll_left_right>;
+            sensor-bindings = <&scroll_left_rightscroll_left_right>;
         };
 
         layer_2 {
