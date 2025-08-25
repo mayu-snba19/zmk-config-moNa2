@@ -70,6 +70,8 @@
 &trans  &kp N7        &kp N8        &kp N9        &kp N0  &trans    &trans  &kp LESS_THAN  &kp GREATER_THAN   &kp QUESTION  &trans             &trans
 &trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans                                                             &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_2 {
