@@ -79,7 +79,7 @@
 &trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans                                                         &kp F12
             >;
 
-            sensor-bindings = <&scroll-lr>;
+            sensor-bindings = <&undefined>;
         };
 
         layer_2 {
