@@ -85,13 +85,15 @@
 &kp Z           &kp X         &kp C    &kp V        &kp B        &trans       &mkp MB2                        &kp N                    &kp M  &kp COMMA  &kp PERIOD  &mkp MB1
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp TAB  &lt 2 LANG2  &lt 1 LANG1  &kp SPACE    &mt_qk RIGHT_COMMAND BACKSPACE  &mt RIGHT_CONTROL ENTER                                &lt 6 ESC
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_1 {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                    &trans         &kp MINUS          &kp PLUS      &kp PIPE           &kp TILDE
-&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans            &trans  &kp LBKT       &kp RIGHT_BRACKET  &kp COLON     &kp DOUBLE_QUOTES  &kp MINUS
-&trans  &kp N7        &kp N8        &kp N9        &kp N0  &trans    &trans  &kp LESS_THAN  &kp GREATER_THAN   &kp QUESTION  &trans             &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                    &trans         &kp MINUS          &kp PLUS   &kp PIPE           &kp TILDE
+&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans            &trans  &kp LBKT       &kp RIGHT_BRACKET  &kp COLON  &kp DOUBLE_QUOTES  &kp MINUS
+&trans  &kp N7        &kp N8        &kp N9        &kp N0  &trans    &trans  &kp LESS_THAN  &kp GREATER_THAN   &kp SLASH  &trans             &trans
 &trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans
             >;
 
@@ -144,13 +146,13 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans            &bt BT_CLR   &trans        &trans          &kp UP_ARROW    &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                         &trans
+&trans  &trans  &trans  &trans  &trans                        &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans            &bt BT_CLR  &trans        &trans          &kp UP_ARROW    &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans                                                         &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&volume>;
         };
 
         layer_7 {
